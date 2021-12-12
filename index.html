@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <header>
+        <img src='assets/santa-claus.png' alt='Santa Claus' id='santa-img'>
+        <h1>Good evening Santa</h1>
+        <p>-4 Snowing</p>
+    </header>
+    <div class='main-container'>
+        <div class='top-container'>
+            <div class='stats-container'>
+                <div class='control-container'>
+                    <label for="home-input">How many homes tonight?</label>
+                    <input type="text" name='home-input'>
+                    <div class='control-btns'>
+                        <button>START</button>
+                        <button>STOP</button>
+                    </div>
+                </div>
+                <div class='calorie-container'>
+                    <p>Tonight's calorie target <span>5,000</span></p>
+                    <p>Calories accumulated <span>3,000</span></p>
+                </div>
+            </div>
+            <div class='stats-container'>
+                <div>
+                    <p>Homes visited <span>50</span></p>
+                    <p>Homes remaining <span>25</span></p>
+                </div>
+            </div>
+        </div>
+        <div class='bottom-container'>
+            <div class='media-container'>
+
+            </div>
+            <div class='speed-container'>
+                <p>Delivery Speed</p>
+                <p><span>10</span> Homes per second</p>
+            </div>
+        </div>
+    </div> <!--- /main-container -->
+    <script src="script.js"></script>
 </body>
 </html>
