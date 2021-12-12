@@ -1,3 +1,118 @@
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    /* colors */
+    --clr-light: 49.4,33.3%,90%;
+    --clr-light-red: 0,100%,25.3%;
+    --clr-dark-red: 0,100%,19.4%;
+    --clr-dark: 0,8%,9.8%;
+    
+    /* font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+    
+    /* font-families */
+    --ff-germania: 'Germania One', cursive;
+    --ff-roch: 'Rochester', cursive;
+}
+
+/*----------------------------------------------*/
+/* Reset                                        */
+/*----------------------------------------------*/
+
+/* Box sizing  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+/* center main content */
+header,
+.main-container {
+    margin: 0 auto;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-germania);
+    font-size: var();
+    color: hsl(var(--clr-light));
+    background-color: hsl(var(--clr-dark));
+    min-height: 100vh;
+}
+
+/*----------------------------------------------*/
+/* Utility classes                              */
+/*----------------------------------------------*/
+
+/* general */
+
+.flex {
+    display: flex;
+}
+
+.width {
+    width: 70%;
+}
+
+.bg-dark { background-color: hsl( var(--clr-dark) );}
+.bg-light { background-color: hsl( var(--clr-light) );}
+.bg-light-red { background-color: hsl( var(--clr-light-red) );}
+.bg-dark-red { background-color: hsl( var(--clr-dark-red) );}
+
+.text-white { color: hsl( var(--clr-light) );}
+
+/* typography */
+
+.ff-germania { font-family: var(--ff-germania); } 
+.ff-roch { font-family: var(--ff-roch); } 
+
+
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+
+header {
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: var(--ff-roch);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #santa-img {
     width: 60px;
 }
