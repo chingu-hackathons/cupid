@@ -4,6 +4,7 @@
 
 :root {
     /* colors */
+    --btn-color: hsl(355, 70%, 54%);
     --clr-light: 49.4,33.3%,90%;
     --clr-light-red: 0,100%,25.3%;
     --clr-dark-red: 0,100%,19.4%;
@@ -46,18 +47,29 @@ p {
     margin: 0;
 }
 
+p {
+    margin-top: 10px;
+}
+
 /* center main content */
 header,
 .main-container {
     margin: 0 auto;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
 /* set up the body */
 body {
+    background-size: cover;
     font-family: var(--ff-germania);
     font-size: var();
     color: hsl(var(--clr-light));
-    background-color: hsl(var(--clr-dark));
+    background-color: #fff;
     min-height: 100vh;
 }
 
@@ -66,6 +78,44 @@ body {
 /*----------------------------------------------*/
 
 /* general */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-dark);
+}
+
+.calorie-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.media-container img {
+    height: 100%
+}
+
+p span {
+    background: #fff;
+    color: #000;
+    border: 2px solid rgb(105, 95, 95);
+    padding: 5px;
+}
+
+/*====================== Buttons ===================*/
+
+.button {
+  display: inline-block;
+  background-color: var(--btn-color);
+  color: #fff;
+  padding: 1.15rem 2.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3rem;
+  transition: .3s;
+}
 
 .flex {
     display: flex;
@@ -79,11 +129,12 @@ body {
     width: 70%;
 }
 
+
+/* I'm not familiar with the syntax below this line */
 .bg-dark { background-color: hsl( var(--clr-dark) );}
 .bg-light { background-color: hsl( var(--clr-light) );}
 .bg-light-red { background-color: hsl( var(--clr-light-red) );}
 .bg-dark-red { background-color: hsl( var(--clr-dark-red) );}
-
 .text-white { color: hsl( var(--clr-light) );}
 
 /* typography */
