@@ -12,7 +12,7 @@
     /* font-sizes */
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
+    --fs-700: 3rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
     --fs-400: 1.125rem;
@@ -76,7 +76,11 @@ body {
 }
 
 .width {
-    width: 70%;
+    width: 80%;
+}
+
+.border {
+    border-radius: 30px;
 }
 
 .bg-dark { background-color: hsl( var(--clr-dark) );}
@@ -97,8 +101,14 @@ body {
 /* ------------------- */
 
 
+header {
+    margin-top: 1.5rem;
+    padding: 1em .5em;
+}
+
 header h1 {
     font-family: var(--ff-roch);
+    font-size: var(--fs-700);
 }
 
 
@@ -115,4 +125,5 @@ header h1 {
 
 #santa-img {
     width: 60px;
+    display: block;
 }
