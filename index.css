@@ -51,10 +51,10 @@ p {
     margin-top: 10px;
 }
 
-/* center main content */
-header,
-.main-container {
-    margin: 0 auto;
+image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
 button {
@@ -92,7 +92,6 @@ body {
     flex-direction: row;
 }
 
-
 .media-container img {
     height: 100%
 }
@@ -125,14 +124,22 @@ p span {
     justify-content: space-between;
 }
 
-.width {
+.mainWidth {
     width: 80%;
+}
+
+.component {
+    width: 45%;
+}
+
+.top-container,
+.bottom-container {
+    height: 50%;
 }
 
 .border {
     border-radius: 30px;
 }
-
 
 /* I'm not familiar with the syntax below this line */
 .bg-dark { background-color: hsl( var(--clr-dark) );}
@@ -152,29 +159,16 @@ p span {
 /* ------------------- */
 
 
-header {
+.top-bar {
     margin-top: 1.5rem;
     padding: 1em .5em;
 }
 
-header h1 {
+.top-bar h1 {
     font-family: var(--ff-roch);
     font-size: var(--fs-700);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 #santa-img {
     width: 60px;
-    display: block;
 }
