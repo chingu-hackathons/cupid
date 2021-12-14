@@ -14,14 +14,14 @@
 </head>
 <body>
     <section class='app-container'>
-        <div class='flex width flex-content bg-light-red'>
-            <img src='assets/santa-claus.png' alt='Santa Claus' id='santa-img'>
-            <h1>Good evening Santa</h1>
-            <p>-4 Snowing</p>
-        </div>
-        <div class='main-container width'>
+        <div class='main-container mainWidth'>
+            <div class='flex flex-content bg-light-red top-bar border'>
+                <img src='assets/santa-claus.png' alt='Santa Claus' id='santa-img'>
+                <h1>Good evening Santa</h1>
+                <p>-4 Snowing</p>
+            </div>
             <div class='top-container flex flex-content'>
-                <div class='stats-container bg-light-red'>
+                <div class='stats-container bg-light-red componentWidth border'>
                     <div class='control-container'>
                         <label for="home-input">How many homes tonight?</label>
                         <input type="text" name='home-input'>
@@ -30,12 +30,12 @@
                             <a href="#" class="button">Stop</a>
                         </div>
                     </div>
-                    <div class='calorie-container bg-light-red'>
+                    <div class='calorie-container bg-light-red border'>
                         <p></p>Tonight's calorie target: <span>5,000</span></p>
                         <p>Calories accumulated: <span>3,000</span></p>
                     </div>
                 </div>
-                <div class='stats-container bg-light-red'>
+                <div class='stats-container bg-light-red componentWidth border'>
                     <div>
                         <p>Homes visited <span>50</span></p>
                         <p>Homes remaining <span>25</span></p>
@@ -43,14 +43,13 @@
                 </div>
             </div>
             <div class='bottom-container flex flex-content'>
-                <div class='media-container'>
-                    <img src="assets/ezgif.com-gif-maker.gif" alt="">
+                <div class='media-container componentWidth border'>
+                    <img src="assets/ezgif.com-gif-maker.gif" alt="" id='gif'>
                 </div>
-                <div class='speed-container bg-light-red'>
+                <div class='speed-container bg-light-red componentWidth border'>
                     <p>Delivery Speed</p>
                     <p><span>10</span> Homes per second</p>
                 </div>
-            </div>
         </div> <!--- /main-container -->
     </section>
     <script src="script.js"></script>
