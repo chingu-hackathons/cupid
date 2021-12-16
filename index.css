@@ -12,8 +12,9 @@
     
     /* font-sizes */
     --fs-900: 9.375rem;
-    --fs-800: 6.25rem;
-    --fs-700: 3rem;
+    --fs-800: 3.30rem;
+    --fs-750: 3rem;
+    --fs-700: 2.75rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
     --fs-400: 1.125rem;
@@ -144,6 +145,7 @@ body {
     margin-bottom: 1em;
 }
 
+
 .calorie-container span {
     margin-left: 1em;
 }
@@ -152,7 +154,7 @@ p span {
     background: #fff;
     color: #000;
     border: 2px solid rgb(105, 95, 95);
-    padding: 5px;
+    padding: 1px;
 }
 
 .stats-container {
@@ -174,6 +176,26 @@ p span {
     width: 100%;
     justify-content: space-around;
     margin-top: .3em;
+}
+
+.home-metrics {
+    font-size: var(--fs-700);
+    padding: .3em 1em;
+    text-align: center;
+}
+
+.home-metrics p {
+    width: 90%;
+    letter-spacing: 2px;
+}
+
+.home-metrics p:first-child{
+    margin-bottom: .75em;
+}
+
+.home-metrics span {
+    float: right;
+    font-size: var(--fs-750);
 }
 
 /*====================== Buttons ===================*/
