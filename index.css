@@ -126,8 +126,23 @@ body {
 }
 
 .calorie-container {
+<<<<<<< HEAD
     display: flex;
     flex-direction: row;
+=======
+    padding: .5em;
+    flex-direction: column;
+    font-size: var(--fs-600);
+    justify-content: space-around;
+}
+
+.calorie-container p:first-child {
+    margin-bottom: 1em;
+}
+
+.calorie-container span {
+    margin-left: 1em;
+>>>>>>> parent of f128057 (Home metric container is half way done)
 }
 
 p span {
@@ -137,6 +152,30 @@ p span {
     padding: 5px;
 }
 
+<<<<<<< HEAD
+=======
+.stats-container {
+    flex-direction: column;
+    font-size: var(--fs-500);
+}
+
+.control-container {
+    padding: .5em;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.control-container input {
+    height: 2.5em;
+}
+
+.control-btns {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: .3em;
+}
+
+>>>>>>> parent of f128057 (Home metric container is half way done)
 /*====================== Buttons ===================*/
 
 .button {
