@@ -199,16 +199,19 @@ p span {
 }
 
 .gauge {
-    width: 80%;
-    max-width: 80%;
-    color: #004033;
-    margin: 1em auto;
-    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: #011402;
+    margin: 0 auto;
+    padding-top: 1.45rem;
   }
   
   .gauge__body {
     width: 100%;
-    height: 80%;
+    height: 0;
+    padding-bottom: 50%;
     background: hsl(var(--clr-dark-red));
     position: relative;
     border-top-left-radius: 100% 200%;
@@ -222,19 +225,19 @@ p span {
     left: 0;
     width: inherit;
     height: 100%;
-    background: rgba(20,108,27,1);
+    background: #004b05;
     transform-origin: center top;
     transform: rotate(0.25turn);
     transition: transform 0.2s ease-out;
   }
-  
+
   .gauge__cover {
     width: 75%;
     height: 150%;
     background: hsl(var(--clr-light-red));
     border-radius: 50%;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
