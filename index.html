@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Rochester&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
     <title>Dashboard</title>
 </head>
 <body>
@@ -50,11 +51,20 @@
                     <img src="assets/ezgif.com-gif-maker.gif" alt="" id='gif'>
                 </div>
                 <div class='speed-container bg-light-red component border'>
-                    <p>Delivery Speed</p>
-                    <p><span>10</span> Homes per second</p>
-                </div>
+                    <!--<p>Delivery Speed</p>
+                    <p><span>10</span> Homes per second</p> -->
+                    <div class="gauge">
+                        <div class="gauge__body">
+                          <div class="gauge__fill"></div>
+                          <div class="gauge__cover"></div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
         </div> <!--- /main-container -->
     </section>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
 </body>
 </html>
