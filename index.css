@@ -199,19 +199,17 @@ p span {
 }
 
 .gauge {
-    width: 100%;
-    max-width: 450px;
-    font-family: "Roboto", sans-serif;
-    font-size: 32px;
+    width: 80%;
+    max-width: 80%;
     color: #004033;
-    margin: 0 auto;
+    margin: 1em auto;
+    height: 100%;
   }
   
   .gauge__body {
     width: 100%;
-    height: 0;
-    padding-bottom: 50%;
-    background: #b4c0be;
+    height: 80%;
+    background: hsl(var(--clr-dark-red));
     position: relative;
     border-top-left-radius: 100% 200%;
     border-top-right-radius: 100% 200%;
@@ -224,7 +222,7 @@ p span {
     left: 0;
     width: inherit;
     height: 100%;
-    background: linear-gradient(97deg, rgba(20,108,27,1) 0%, rgba(254,1,1) 100%);
+    background: rgba(20,108,27,1);
     transform-origin: center top;
     transform: rotate(0.25turn);
     transition: transform 0.2s ease-out;
@@ -236,9 +234,10 @@ p span {
     background: hsl(var(--clr-light-red));
     border-radius: 50%;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
   
     /* Text */
     display: flex;
@@ -246,6 +245,10 @@ p span {
     justify-content: center;
     padding-bottom: 25%;
     box-sizing: border-box;
+    color: hsl( var(--clr-light) );
+    font-family: var(--ff-germania);
+    text-align: center;
+    font-size: var(--fs-600);
   }
 
 /*====================== Buttons ===================*/
@@ -280,4 +283,8 @@ p span {
     width: 100%;
     height: 100%;
     border-radius: 30px;
+}
+
+.pink {
+    font-size: var(--fs-700);
 }

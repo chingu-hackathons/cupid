@@ -8,9 +8,9 @@ function setGaugeValue(gauge, value) {
   gauge.querySelector(".gauge__fill").style.transform = `rotate(${
     value / 2
   }turn)`;
-  gauge.querySelector(".gauge__cover").textContent = `${Math.round(
+  gauge.querySelector(".gauge__cover").innerHTML = `<p><span class='pink'>${Math.round(
     value * 10
-  )} Homes per Second`;
+  )}</span><br>Homes per Second<p>`;
 }
-
+ 
 setGaugeValue(gaugeElement, 1);
